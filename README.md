@@ -16,4 +16,5 @@ Aquí puede acceder al trabajo y reflexiones individuales de cada uno de nosotro
 
 * 📂 [Omar Imanol Rodríguez Rodríguez](/Omar_Imanol_Rodríguez_Rodríguez/)
 * 📂 [Ramos Rosales Hector Jonathan](/Ramos_Rosales_Hector_Jonathan/)
+* 📂 [Osmar Enrique Benites Rivera](/Osmar_Enrique_Benites_Rivera/)
 * 📂 [Roberto Fernando Lopez Rojo](/Roberto_Fernando_Lopez_Rojo/)
