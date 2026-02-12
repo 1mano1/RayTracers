@@ -15,3 +15,8 @@ Los modelos traen ideas nuevas para diferenciar la frustración del reto real:
 Así como se explica en el artículo de GAP, la principal aplicación es poder crear tutoriales con un diseño accesible desde la **fase de concepto**.
 
 Esto sirve para que los usuarios se sientan cómodos y el aprendizaje sea agradable a la hora de jugar, evitando que se sientan estancados o que abandonen el juego al inicio. Básicamente, usar estas listas como una guía preventiva antes de empezar a programar todo.
+
+## Conclusión
+En resumen, tanto GAP como PLAY funcionan como una lista de verificación esencial para no diseñar a ciegas. Mientras PLAY se enfoca en que el juego sea divertido y mantenga el interés en los jugadores, GAP asegura que los nuevos jugadores no se rindan antes de empezar.
+
+Lo más importante es que usar ambos modelos desde el principio nos permite crear experiencias de calidad y detectar fallas, sin tener que esperar a que el juego esté terminado y luego sea un problema tener que corregir los errores.
