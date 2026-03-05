@@ -101,3 +101,59 @@ La experiencia total de *Pieces of the Mind* es inquietante, empática y emocion
 ### Modos Especiales de Interfaz
 * **Modo Ataque de Psicosis:** Colapso visual y pérdida de control. Movimiento pesado, colores invertidos y desgarros en pantalla. El jugador, vulnerable, debe usar el parpadeo (tecla F) para "limpiar" temporalmente su visión y orientarse.
 * **Modo Viaje Mental:** Transición inmersiva al tomar la mano del alma. El HUD abandona el minimalismo: aparecen de golpe un temporizador y una *checklist* de objetivos, reflejando la urgencia del nivel.
+
+---
+
+## PAGINA 3 (PERSONAJE)
+
+### **El Protagonista** 
+
+**Perfil**
+
+* Nombre: Desconocido ("El Padre")
+* Edad: 40 años
+* Género: Masculino
+* Estado mental: Psicosis, culpa reprimida
+
+**Historia de Trasfondo**
+Padre de una niña a la que amaba profundamente. Cometió actos de los que se arrepiente pero que suprimió en su subconsciente. Cuando su hija desaparece, su mente colapsa y convierte su culpa en alucinaciones que lo atacan cada vez que intenta avanzar en el bosque.
+
+**Personalidad**
+Un hombre roto que aún no acepta su responsabilidad. Mezcla de amor genuino hacia su hija y negación profunda de sus propios actos. Conforme avanza el juego, su carácter evoluciona hacia la redención y la empatía.
+
+**Relación con el Gameplay**
+Las opciones que tiene el jugador están relacionadas con su nivel de cordura. La barra de cordura es, literalmente, la lente con la que el jugador percibe el mundo.
+
+### **La niña Guia**
+Aparece en momentos críticos sin identificarse. Actúa como guía indirecta: entrega al protagonista una pastilla de cordura y la Piedra de la Verdad en el primer encuentro. Su identidad real es la hija del protagonista, aunque él no la reconoce debido a su estado mental. No puede ser dañada ni interactúa de forma extendida; su función es narrativa y simbólica.
+
+### **Controles — Esquema Básico (PC)**
+| Tecla                | Encabezado 2                        | Encabezado 3                       |
+|----------------------|-------------------------------------|------------------------------------|
+| WASD                 | moviemiento                         | Siempre Activo                     |
+| E                    | Interactuar / Iniciar Viaje Mental  | Cerca de un alma                   |
+| Q                    | Usar la piedra de la verdad         | Bosque o mente                     |
+| F                    | Parpeadar                           | Durante ataque de locura           |
+| Tab                  | Inventario                          | Siempre Activo                     |
+| Scroll // Rueda      | Usar pastilla (Consimir)            | Con pastilla en el inventario      |
+
+
+## GAMEPLAY
+
+### **Secuencia de juego**
+El juego se divide en actos narrativos, cada uno centrado en un alma del bosque. Cada acto sigue la estructura: exploración del bosque → encuentro con el alma → viaje mental (puzzle) → resolución y recompensa → la siguiente zona se hace más sencilla de explorar. La progresión no es lineal; el jugador puede elegir el orden en que aborda ciertas almas, aunque algunas requieren objetos obtenidos de otras primero. Esto hace que se pueda completar el juego sin necesidad de ayudar a las almas, aunque sería una experiencia mucho más complicada de hacer.
+
+### **Core Loop — Incursión Mental y Gestión de Cordura**
+| 1 | Input del Jugador | El jugador camina por el bosque (WASD), encuentra un alma y presiona E para iniciar el viaje mental. Dentro de la mente, presiona Q para usar la Piedra de la Verdad y revelar objetos ocultos. |
+|--------------|--------------|--------------|
+| 2       | Respuesta del Sistema       | Se activa el nivel de la mente. Aparece un checklist de objetos y se inicia un temporizador. Al presionar Q, el sistema resalta visualmente los objetos necesarios.       |
+| 3       | Cambio de Estado       | ÉXITO: Cordura sube, filtro de cámara se vuelve nítido, se obtiene Pastilla Real. FALLO: Cordura baja, distorsión aumenta, se recibe Pastilla Falsa.      |
+| 4       | Decisión Siguiente       | ¿Consumir la pastilla? ¿Buscar al alma que necesita el objeto? ¿Usar la piedra en el bosque para localizar pistas?       |
+| 5       | Repetición con Variación     | Menos tiempo disponible en las siguientes mentes. Puzzles que requieren objetos previos. Mundos mentales más caóticos conforme avanza la historia.       |
+ 
+
+### **Características por Plataforma**
+* PC: Teclado y ratón con accesos directos rápidos para la piedra y el parpadeo. Resolución y calidad de distorsión visual ajustable.
+* PS5: Gatillos adaptativos para el efecto de "parpadeo" (resistencia háptica al ejecutar la mecánica). Rumble vinculado a la barra de cordura.
+* Xbox Series X/S: Equivalente al PS5. Vibración de alta frecuencia durante los ataques de locura.
+* Todos: Sin multijugador. Experiencia exclusivamente single-player, guardado automático por checkpoint.
