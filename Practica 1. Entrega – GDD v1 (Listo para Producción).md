@@ -50,6 +50,58 @@ El jugador explora el bosque como nexo central para localizar a las almas y entr
     * ¿Usar la piedra (**Q**) en el bosque para buscar pistas hacia la casa del árbol?
 5.  **Repetición con variación:** El ciclo se repite con menos tiempo disponible en el reloj, puzles que requieren intercambio de ítems previos y mundos mentales visualmente más caóticos.
 
+## Mundo de Juego
+
+### Visión General
+El mundo de *Pieces of the Mind* reacciona dinámicamente a la salud mental del protagonista, la cual se gestiona mediante una **barra de cordura**. Esta mecánica actúa como el pilar visual y de dificultad del juego, dividiendo la percepción del entorno en dos estados:
+
+* **Cordura Alta (Estable):** Se mantiene al consumir medicación para la psicosis. El bosque y los entornos son oscuros y hostiles, pero mantienen una estructura lógica y legible. A nivel mecánico, la dificultad general disminuye y la tasa de aparición de enemigos es menor.
+* **Cordura Baja (Deterioro):** Refleja el daño psicológico del protagonista. El entorno se deforma radicalmente, los colores se saturan y las sombras adquieren siluetas amenazantes. Esto se traduce en un aumento directo de la dificultad y un mundo mucho más opresivo.
+
+### Entornos
+
+| Entorno | Descripción / Mood | Música / Atmósfera |
+| :--- | :--- | :--- |
+| **El Bosque** | Nexo central. Árboles altos y densos, luz tenue. Se distorsiona progresivamente. Conecta todas las zonas del juego. | Ambient oscuro. Susurros y crepitar de ramas. Se añaden notas disonantes al bajar la cordura. |
+| **Mente 1 — El Niño** | Habitación infantil destruida. Juguetes rotos, sombras que se mueven. Tonos desaturados, ambiente sucio y sangriento. | Caja de música distorsionada. Llanto lejano. Silencios incómodos. |
+| **Mente 2 — La Mujer** | Cocina doméstica atrapada en un *loop*. Reloj detenido. Humo permanente y ollas que hierven sin parar. | Sonidos de electrodomésticos en *loop*. Voz femenina que tararea fuera de tono. |
+| **Mente 3+ — Otras almas** | Cada mente refleja un trauma diferente de su habitante: espacios familiares convertidos en pesadillas surrealistas. | Música diegética ligada al trauma de cada alma. |
+| **La Casa del Árbol** | Lugar sagrado de la hija. Madera vieja que rechina pero acogedora. Fotos, dibujos y recuerdos. Luz cálida y tenue. | Melodía de piano simple y melancólica. Sin distorsión, incluso con cordura baja. |
+
+### Conexión entre Zonas
+El Bosque actúa como *hub* (nexo). Las Mentes son accesibles desde el Bosque al encontrar cada alma. La Casa del Árbol se desbloquea progresivamente: cada alma sanada elimina una barrera que bloqueaba el camino hacia ella. 
+
+**Flujo de progresión:**
+> Bosque → Alma → Mente → Bosque (con objeto) → Siguiente Alma → Casa del Árbol
+
+---
+
+## Experiencia de Juego
+
+### Gestalt del Juego
+La experiencia total de *Pieces of the Mind* es inquietante, empática y emocionalmente agotadora. No busca el terror basado en sustos repentinos (*jumpscares*) ni la violencia de forma explícita; su objetivo es generar una incomodidad mediante la ambientación, propia de alguien que sabe que está haciendo daño sin recordar cómo llegó ahí. El jugador debe sentirse en todo momento tan desorientado como el protagonista, pero conservando la claridad suficiente para seguir adelante.
+
+### Emociones Objetivo
+* Inquietud y desorientación constante (especialmente en los primeros actos).
+* Empatía hacia las almas a medida que se revelan sus historias.
+* Culpa progresiva conforme el jugador entiende el rol del protagonista.
+* Catarsis y alivio emocional al obtener el perdón final.
+
+### Pantalla de Inicio y Navegación
+* **Menú Principal:** Al iniciar, se presenta una pantalla negra con sonido de lluvia y viento. El título aparece lentamente sobre una imagen del bosque nocturno. El menú es minimalista (texto blanco sobre negro), sin música extradiegética al principio, solo sonido ambiente. Opciones: *Nuevo Juego, Continuar y Ajustes*.
+* **Interfaz de Juego (HUD):** Es casi inexistente para favorecer la inmersión. Consiste únicamente en una sutil viñeta en los bordes de la pantalla (que se oscurece o intensifica al bajar la cordura) y un pequeño indicador del temporizador (*timer*) durante los Viajes Mentales. El inventario no está en pantalla; se abre manualmente (tecla Tab).
+
+### Uso del Sonido
+* **Bosque:** Ambiente generativo que se degrada con la cordura. A mayor locura, más capas disonantes.
+* **Mentes:** Cada una tiene su propia identidad sonora basada en el trauma del alma.
+* **Pastilla Real:** Sonido limpio y cristalino, resolución armónica.
+* **Pastilla Falsa:** Sonido distorsionado, *glitch* de audio, sensación de error.
+* **La Casa del Árbol:** Música de piano diegética. El único espacio sonoro que no se corrompe.
+
+### Modos Especiales de Interfaz
+* **Modo Ataque de Psicosis:** Colapso visual y pérdida de control. Movimiento pesado, colores invertidos y desgarros en pantalla. El jugador, vulnerable, debe usar el parpadeo (tecla F) para "limpiar" temporalmente su visión y orientarse.
+* **Modo Viaje Mental:** Transición inmersiva al tomar la mano del alma. El HUD abandona el minimalismo: aparecen de golpe un temporizador y una *checklist* de objetivos, reflejando la urgencia del nivel.
+
 ---
 
 ## PAGINA 3 (PERSONAJE)
@@ -106,3 +158,55 @@ El juego se divide en actos narrativos, cada uno centrado en un alma del bosque.
 * Xbox Series X/S: Equivalente al PS5. Vibración de alta frecuencia durante los ataques de locura.
 * Todos: Sin multijugador. Experiencia exclusivamente single-player, guardado automático por checkpoint.
 
+
+# Mundo de Juego
+
+## Visión General
+El mundo de *Pieces of the Mind* reacciona dinámicamente a la salud mental del protagonista, la cual se gestiona mediante una **barra de cordura**. Esta mecánica actúa como el pilar visual y de dificultad del juego, dividiendo la percepción del entorno en dos estados:
+
+* **Cordura Alta (Estable):** Se mantiene al consumir medicación para la psicosis. El bosque y los entornos son oscuros y hostiles, pero mantienen una estructura lógica y legible. A nivel mecánico, la dificultad general disminuye y la tasa de aparición de enemigos es menor.
+* **Cordura Baja (Deterioro):** Refleja el daño psicológico del protagonista. El entorno se deforma radicalmente, los colores se saturan y las sombras adquieren siluetas amenazantes. Esto se traduce en un aumento directo de la dificultad y un mundo mucho más opresivo.
+
+## Entornos
+
+| Entorno | Descripción / Mood | Música / Atmósfera |
+| :--- | :--- | :--- |
+| **El Bosque** | Nexo central. Árboles altos y densos, luz tenue. Se distorsiona progresivamente. Conecta todas las zonas del juego. | Ambient oscuro. Susurros y crepitar de ramas. Se añaden notas disonantes al bajar la cordura. |
+| **Mente 1 — El Niño** | Habitación infantil destruida. Juguetes rotos, sombras que se mueven. Tonos desaturados, ambiente sucio y sangriento. | Caja de música distorsionada. Llanto lejano. Silencios incómodos. |
+| **Mente 2 — La Mujer** | Cocina doméstica atrapada en un *loop*. Reloj detenido. Humo permanente y ollas que hierven sin parar. | Sonidos de electrodomésticos en *loop*. Voz femenina que tararea fuera de tono. |
+| **Mente 3+ — Otras almas** | Cada mente refleja un trauma diferente de su habitante: espacios familiares convertidos en pesadillas surrealistas. | Música diegética ligada al trauma de cada alma. |
+| **La Casa del Árbol** | Lugar sagrado de la hija. Madera vieja que rechina pero acogedora. Fotos, dibujos y recuerdos. Luz cálida y tenue. | Melodía de piano simple y melancólica. Sin distorsión, incluso con cordura baja. |
+
+## Conexión entre Zonas
+El Bosque actúa como *hub* (nexo). Las Mentes son accesibles desde el Bosque al encontrar cada alma. La Casa del Árbol se desbloquea progresivamente: cada alma sanada elimina una barrera que bloqueaba el camino hacia ella. 
+
+**Flujo de progresión:**
+> Bosque → Alma → Mente → Bosque (con objeto) → Siguiente Alma → Casa del Árbol
+
+---
+
+# Experiencia de Juego
+
+## Gestalt del Juego
+La experiencia total de *Pieces of the Mind* es inquietante, empática y emocionalmente agotadora. No busca el terror basado en sustos repentinos (*jumpscares*) ni la violencia de forma explícita; su objetivo es generar una incomodidad mediante la ambientación, propia de alguien que sabe que está haciendo daño sin recordar cómo llegó ahí. El jugador debe sentirse en todo momento tan desorientado como el protagonista, pero conservando la claridad suficiente para seguir adelante.
+
+## Emociones Objetivo
+* Inquietud y desorientación constante (especialmente en los primeros actos).
+* Empatía hacia las almas a medida que se revelan sus historias.
+* Culpa progresiva conforme el jugador entiende el rol del protagonista.
+* Catarsis y alivio emocional al obtener el perdón final.
+
+## Pantalla de Inicio y Navegación
+* **Menú Principal:** Al iniciar, se presenta una pantalla negra con sonido de lluvia y viento. El título aparece lentamente sobre una imagen del bosque nocturno. El menú es minimalista (texto blanco sobre negro), sin música extradiegética al principio, solo sonido ambiente. Opciones: *Nuevo Juego, Continuar y Ajustes*.
+* **Interfaz de Juego (HUD):** Es casi inexistente para favorecer la inmersión. Consiste únicamente en una sutil viñeta en los bordes de la pantalla (que se oscurece o intensifica al bajar la cordura) y un pequeño indicador del temporizador (*timer*) durante los Viajes Mentales. El inventario no está en pantalla; se abre manualmente (tecla Tab).
+
+## Uso del Sonido
+* **Bosque:** Ambiente generativo que se degrada con la cordura. A mayor locura, más capas disonantes.
+* **Mentes:** Cada una tiene su propia identidad sonora basada en el trauma del alma.
+* **Pastilla Real:** Sonido limpio y cristalino, resolución armónica.
+* **Pastilla Falsa:** Sonido distorsionado, *glitch* de audio, sensación de error.
+* **La Casa del Árbol:** Música de piano diegética. El único espacio sonoro que no se corrompe.
+
+## Modos Especiales de Interfaz
+* **Modo Ataque de Psicosis:** Colapso visual y pérdida de control. Movimiento pesado, colores invertidos y desgarros en pantalla. El jugador, vulnerable, debe usar el parpadeo (tecla F) para "limpiar" temporalmente su visión y orientarse.
+* **Modo Viaje Mental:** Transición inmersiva al tomar la mano del alma. El HUD abandona el minimalismo: aparecen de golpe un temporizador y una *checklist* de objetivos, reflejando la urgencia del nivel.
