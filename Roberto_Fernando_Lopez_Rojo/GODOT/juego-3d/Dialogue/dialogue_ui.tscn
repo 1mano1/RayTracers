@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://y2ub66iljaob"]
+
+[sub_resource type="Animation" id="Animation_gpicu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue_Text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_bp21m"]
+resource_name = "Scroll"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Dialogue_Text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vwiwy"]
+_data = {
+&"RESET": SubResource("Animation_gpicu"),
+&"Scroll": SubResource("Animation_bp21m")
+}
+
+[node name="dialogue_ui" type="Control" unique_id=1753170355]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Canvas" type="CanvasLayer" parent="." unique_id=1344396227]
+visible = false
+
+[node name="BG" type="ColorRect" parent="Canvas" unique_id=1743393636]
+offset_top = 435.0
+offset_right = 1152.0
+offset_bottom = 641.0
+color = Color(0, 0, 0, 1)
+
+[node name="Speaker_Name" type="RichTextLabel" parent="Canvas" unique_id=798844540]
+offset_left = 21.0
+offset_top = 448.0
+offset_right = 514.0
+offset_bottom = 503.0
+theme_override_font_sizes/normal_font_size = 32
+text = "Speaker Name"
+
+[node name="Dialogue_Text" type="RichTextLabel" parent="Canvas" unique_id=909649722]
+offset_left = 24.0
+offset_top = 499.0
+offset_right = 1129.0
+offset_bottom = 607.0
+theme_override_font_sizes/normal_font_size = 24
+text = "This is Dialogue Text. Label. Lol"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="continuar" type="Button" parent="Canvas" unique_id=452229332]
+offset_left = 942.0
+offset_top = 565.0
+offset_right = 1129.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 24
+text = "Continuar"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Canvas" unique_id=148976758]
+libraries/ = SubResource("AnimationLibrary_vwiwy")

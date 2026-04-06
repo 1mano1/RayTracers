@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cgyfx5usm1wl2"]
+
+[ext_resource type="Script" uid="uid://xm0br77ybywq" path="res://Player/player.gd" id="1_q3lat"]
+[ext_resource type="Script" uid="uid://dbg15msodwak4" path="res://Player/fp_cam.gd" id="2_tok1r"]
+[ext_resource type="PackedScene" uid="uid://b4pg80px6jj1h" path="res://Interaccion/interact_ray.tscn" id="3_ddoul"]
+[ext_resource type="Texture2D" uid="uid://btuxclrlx6six" path="res://images/Illuminati-Logo.svg.png" id="4_8g4oa"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l2ndj"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3qydi"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1500257347]
+script = ExtResource("1_q3lat")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=40647005]
+shape = SubResource("CapsuleShape3D_l2ndj")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=115639009]
+mesh = SubResource("CapsuleMesh_3qydi")
+
+[node name="Head" type="Node3D" parent="." unique_id=346694067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.766185, 0)
+script = ExtResource("2_tok1r")
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1311637525]
+
+[node name="InteractRay" parent="Head" unique_id=569721596 instance=ExtResource("3_ddoul")]
+
+[node name="Control" type="Control" parent="." unique_id=499781385]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1153.0
+offset_bottom = 651.0
+
+[node name="CrossHair" type="TextureRect" parent="Control" unique_id=1490420949]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.3125
+offset_top = -14.75
+offset_right = 16.3125
+offset_bottom = 14.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_8g4oa")
+expand_mode = 1

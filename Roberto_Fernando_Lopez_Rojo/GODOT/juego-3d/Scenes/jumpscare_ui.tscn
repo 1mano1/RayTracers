@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ckxoq64r3cbwy"]
+
+[ext_resource type="Script" uid="uid://bnmb04vneorgh" path="res://Scenes/jumpscare_ui.gd" id="1_hpt30"]
+[ext_resource type="Texture2D" uid="uid://5umhciuq435o" path="res://images/wegajumpscare.jpg" id="1_mql2u"]
+[ext_resource type="AudioStream" uid="uid://2q4qg147thn5" path="res://Sonidos/Maltigi scream.mp3" id="2_hpt30"]
+
+[node name="JumpscareUI" type="CanvasLayer" unique_id=1276765448]
+script = ExtResource("1_hpt30")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=788674792]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mql2u")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=149494931]
+stream = ExtResource("2_hpt30")
+volume_db = -10.34
+playback_type = 1

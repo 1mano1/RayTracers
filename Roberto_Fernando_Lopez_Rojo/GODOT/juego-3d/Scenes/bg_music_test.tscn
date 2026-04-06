@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cfsna27yqjp0m"]
+
+[ext_resource type="AudioStream" uid="uid://ehofmhpcpnsc" path="res://MUSIC/Baldis BASICS in education and learning Musschool OST.mp3" id="1_rjvxw"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=295643758]
+stream = ExtResource("1_rjvxw")
+autoplay = true

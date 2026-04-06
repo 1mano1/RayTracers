@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cb8d277qjuqmr"]
+
+[ext_resource type="Texture2D" uid="uid://sb7cf3f6x6n4" path="res://images/wega.png" id="1_rm3qf"]
+[ext_resource type="Script" uid="uid://wpsje5jemng1" path="res://Scenes/wega.gd" id="1_vw1xg"]
+[ext_resource type="AudioStream" uid="uid://xk8t234anm2e" path="res://Sonidos/goofy ahh wega scream.mp3" id="3_wl7wi"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wl7wi"]
+radius = 2.168457
+height = 7.14209
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_j7686"]
+radius = 2.616211
+height = 7.8273926
+
+[node name="Wega" type="CharacterBody3D" unique_id=1474557968]
+collision_layer = 0
+collision_mask = 16
+script = ExtResource("1_vw1xg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=722664594]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10961914, 0)
+shape = SubResource("CapsuleShape3D_wl7wi")
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D" unique_id=21849052]
+pixel_size = 0.005
+billboard = 1
+texture = ExtResource("1_rm3qf")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1222737115]
+stream = ExtResource("3_wl7wi")
+parameters/looping = true
+
+[node name="KillZoneArea" type="Area3D" parent="." unique_id=852800382]
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="KillZoneArea" unique_id=308866180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24230957, 0)
+shape = SubResource("CapsuleShape3D_j7686")
+
+[connection signal="body_entered" from="KillZoneArea" to="." method="_on_kill_zone_area_body_entered"]

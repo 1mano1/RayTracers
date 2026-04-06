@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://clffj5q5i14f4"]
+
+[ext_resource type="Script" uid="uid://bjd2k7mbkc3sx" path="res://Scenes/cheese.gd" id="1_oy54m"]
+[ext_resource type="Texture2D" uid="uid://1oc7bkdgra7s" path="res://images/pizza.png" id="2_oy54m"]
+[ext_resource type="AudioStream" uid="uid://b8eke4g2yigt8" path="res://Sonidos/Eating_SFX.mp3" id="3_g4xpp"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_46kgj"]
+
+[node name="Cheese" type="StaticBody3D" unique_id=214668000]
+script = ExtResource("1_oy54m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=93572411]
+shape = SubResource("SphereShape3D_46kgj")
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D" unique_id=237268924]
+pixel_size = 0.0028
+billboard = 1
+texture = ExtResource("2_oy54m")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=731398343]
+stream = ExtResource("3_g4xpp")
+
+[connection signal="interacted" from="." to="." method="_on_interacted"]

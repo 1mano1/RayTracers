@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://f23isagxcbbt"]
+
+[ext_resource type="Script" uid="uid://brv84kc7iw5mi" path="res://Scripts/dialogue_trigger.gd" id="1_e2jh5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ld6ec"]
+
+[node name="DialogueTrigger" type="Node3D" unique_id=1602769367]
+script = ExtResource("1_e2jh5")
+dialogues = Array[String](["Hi how are you!", "Im doing good thank you fine NPC.", "thank you! im happy you can do that heh!"])
+speaker_names = Array[String](["Red Rails", "Player", "Red Rails"])
+
+[node name="Trigger" type="Area3D" parent="." unique_id=627671290]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Trigger" unique_id=1177389743]
+shape = SubResource("BoxShape3D_ld6ec")
+
+[connection signal="body_entered" from="Trigger" to="." method="start_dialogue"]

@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cl6m5x2ip7j6n"]
+
+[ext_resource type="Texture2D" uid="uid://c1tp7pqe622b5" path="res://icon.svg" id="1_n0qsc"]
+[ext_resource type="PackedScene" uid="uid://cgyfx5usm1wl2" path="res://Player/Player.tscn" id="2_dilhk"]
+[ext_resource type="PackedScene" uid="uid://bhylkkdg22qkl" path="res://NPCS/npc_test.tscn" id="3_3mhv4"]
+[ext_resource type="PackedScene" uid="uid://y2ub66iljaob" path="res://Dialogue/dialogue_ui.tscn" id="4_syshm"]
+[ext_resource type="PackedScene" uid="uid://f23isagxcbbt" path="res://Scenes/dialogue_trigger.tscn" id="5_rfktq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dilhk"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_3mhv4"]
+sky_material = SubResource("ProceduralSkyMaterial_dilhk")
+
+[sub_resource type="Environment" id="Environment_rf6l5"]
+background_mode = 2
+sky = SubResource("Sky_3mhv4")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m6uo5"]
+size = Vector3(50, 1, 50)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dilhk"]
+albedo_texture = ExtResource("1_n0qsc")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n0qsc"]
+
+[node name="Level1" type="Node3D" unique_id=1096064725]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=44151195]
+environment = SubResource("Environment_rf6l5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1665155442]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=936768579]
+shape = SubResource("BoxShape3D_m6uo5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionShape3D" unique_id=838677531]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_dilhk")
+mesh = SubResource("BoxMesh_n0qsc")
+
+[node name="Player" parent="." unique_id=1500257347 instance=ExtResource("2_dilhk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5826286, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=652381375]
+transform = Transform3D(0.7965299, 0.47316423, 0.37637177, 0, -0.6225146, 0.7826082, 0.6045991, -0.6233708, -0.4958515, 26.53584, 17.614655, -23.445147)
+light_color = Color(0.97964066, 0.4771012, 0.4255898, 1)
+shadow_enabled = true
+
+[node name="npc_test" parent="." unique_id=1579184141 instance=ExtResource("3_3mhv4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7106484, 1.61655, -4.876253)
+
+[node name="DialogueTrigger" parent="." unique_id=1602769367 node_paths=PackedStringArray("speaker") instance=ExtResource("5_rfktq")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.65492177, 1.5366431, -4.890318)
+speaker = NodePath("../npc_test")
+
+[node name="dialogue_ui" parent="." unique_id=1753170355 instance=ExtResource("4_syshm")]

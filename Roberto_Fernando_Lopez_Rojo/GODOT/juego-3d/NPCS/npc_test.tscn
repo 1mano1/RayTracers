@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bhylkkdg22qkl"]
+
+[ext_resource type="Texture2D" uid="uid://b734ecbp8ak4c" path="res://images/walfa-1.webp" id="1_aubw2"]
+
+[node name="npc_test" type="CharacterBody3D" unique_id=1579184141]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2113904713]
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D" unique_id=580022170]
+pixel_size = 0.005
+billboard = 1
+double_sided = false
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("1_aubw2")
